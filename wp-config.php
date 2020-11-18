@@ -18,21 +18,56 @@
  * @package WordPress
  */
 
+$server_addr = $_SERVER['SERVER_ADDR'];
+switch ($server_addr) {
+    case '::1':
+    case '127.0.0.1':
+        $dbhost_default = 'localhost';
+        $dbname = 'wanderley_site';
+        $dbuser_default = 'root';
+        $dbpassword_default = 'root';
+        $dev_mod = true;
+        $wp_home = 'http://wanderley.localhost/';
+        $wp_siteurl = 'http://wanderley.localhost/';
+		break;
+	case '198.199.88.130':
+		$dbhost_default = 'ddb-mysql-nyc1-74097-do-user-787860-0.db.ondigitalocean.com:25060';
+		$dbname = 'wanderley_site';
+		$dbuser_default = 'wordpressuser';
+		$dbpassword_default = '53kmqydsxob789a';
+        $dev_mod = false;
+        $wp_home = 'https://wanderley.dnadevendas.com.br/';
+        $wp_siteurl = 'https://wanderley.dnadevendas.com.br';
+        break;
+    default:
+        $dbhost_default = 'wanderley_site.mysql.dbaas.com.br';
+        $dbname = 'wanderley_site';
+        $dbuser_default = 'wanderley_site';
+        $dbpassword_default = 'legiony720@';
+        $dev_mod = false;
+        $wp_home = 'https://www.wanderleyconstrucoes.com.br/';
+        $wp_siteurl = 'https://www.wanderleyconstrucoes.com.br/';
+        break;
+}
+
+define('WP_HOME',$wp_home);
+define('WP_SITEURL',$wp_siteurl);
+
 // ** Configurações do MySQL - Você pode pegar estas informações com o serviço de hospedagem ** //
 /** O nome do banco de dados do WordPress */
-define( 'DB_NAME', 'wanderley_site' );
+define( 'DB_NAME', $dbname );
 
 /** Usuário do banco de dados MySQL */
-define( 'DB_USER', 'wanderley_site' );
+define( 'DB_USER', $dbuser_default );
 
 /** Senha do banco de dados MySQL */
-define( 'DB_PASSWORD', 'legiony720@' );
+define( 'DB_PASSWORD', $dbpassword_default );
 
 /** Nome do host do MySQL */
-define( 'DB_HOST', 'wanderley_site.mysql.dbaas.com.br' );
+define( 'DB_HOST', $dbhost_default );
 
 /** Charset do banco de dados a ser usado na criação das tabelas. */
-define( 'DB_CHARSET', 'utf8mb4' );
+define( 'DB_CHARSET', 'utf8' );
 
 /** O tipo de Collate do banco de dados. Não altere isso se tiver dúvidas. */
 define( 'DB_COLLATE', '' );
@@ -82,7 +117,9 @@ $table_prefix = 'wp_';
  *
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
-define( 'WP_DEBUG', false );
+define( 'WP_DEBUG', $dev_mod );
+define('DEV_MODE', $dev_mod);
+define('WP_DEBUG_DISPLAY', $dev_mod );
 
 /* Isto é tudo, pode parar de editar! :) */
 
