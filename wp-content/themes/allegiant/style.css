@@ -904,7 +904,12 @@ NAVIGATION
 .menu-main li a:hover {
     border-bottom: 2px solid #bd2130;
 }
-
+#empFilter *:first-child{
+    margin-left: auto!important;
+}
+#empFilter *:last-child{
+    margin-right: auto!important;
+}
 /* Menu Elements Bottom fixed*/
 .menu-bottom-fixed a p {
     padding: 10px;

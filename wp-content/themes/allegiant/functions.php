@@ -194,3 +194,14 @@ add_filter( 'single_template', function ($single_template) {
 	return $single_template;
 
 }, 10, 3 );
+// DNA
+
+// Incluir DNA JS
+function dnajs() {
+	wp_enqueue_script( 'dnajs', 
+  					get_stylesheet_directory_uri() . '/js/dna.js', 
+  					array('jquery'), 
+  					'1.0', 
+  					true); 
+}
+add_action( 'wp_enqueue_scripts', 'dnajs');

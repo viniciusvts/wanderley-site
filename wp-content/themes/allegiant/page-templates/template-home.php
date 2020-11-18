@@ -104,16 +104,49 @@
         </section>
 
         <section id="empreendimentos" class="pt-5 pb-5">
+            <?php
+                global $post;
+                $args = array( 'cat' => '2', 'posts_per_page' => '6' );
+                $myposts = get_posts( $args );
+            ?>
             <div class="container">
                 <h1 class="titulos mb-5  text-center">Imóveis <span style="color: #bd2130 ">à Venda</span></h1>
     
-                <div class="row">
+                <div class="row mx-auto mb-4" id="empFilter">
+                    <a class="btn btn-danger btn-sm col-md-2 m-1"
+                    data-target="cat-all"
+                    href="#empreendimentos">Todos</a>
                     <?php
-                        global $post;
-                        $args = array( 'cat' => '2', 'posts_per_page' => '6' );
-                        $myposts = get_posts( $args );
-                        foreach( $myposts as $post ) : setup_postdata($post); ?>
-                            <div class="col-12 col-sm-12 col-md-4">
+                    /** pega todas as categorias */
+                    $allCats = array();
+                    foreach( $myposts as $post ){ 
+                        $cats = wp_get_post_categories($post->ID);
+                        foreach( $cats as $cat ){
+                            $allCats[] = $cat;
+                        }
+                    }
+                    // remove duplicados
+                    $allCats = array_unique($allCats);
+                    // remove o id 2 (empreedimentos) 
+                    $allCats = array_diff($allCats, [2]);
+                    foreach( $allCats as $cat ){
+                        $catInfo = get_category($cat);
+                    ?>
+                    <a class="btn btn-outline-danger btn-sm col-md-2 m-1"
+                    data-target="cat-<?php echo $catInfo->term_id ?>"
+                    href="#empreendimentos"><?php echo $catInfo->name ?></a>
+                    <?php
+                    }
+                    ?>
+                </div>
+                <div class="row" id="empList">
+                    <?php
+                        foreach( $myposts as $post ) : setup_postdata($post);
+                        $cats = wp_get_post_categories($post->ID);
+                        $cats = preg_filter('/^/', 'cat-', $cats);
+                        $cats = join(' ', $cats);
+                    ?>
+                            <div class="col-12 col-sm-12 col-md-4 <?php echo $cats ?>">
                                 <a href="<?php the_permalink(); ?>" title="Ver empreendimento">
                                     <div class="card shadow-sm mb-5 text-white rounded">
                                         <img class="card-img" src="<?php the_post_thumbnail_url(); ?>">
