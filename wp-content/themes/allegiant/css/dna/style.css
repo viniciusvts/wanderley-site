@@ -1,0 +1,148 @@
+#pop-up-simulator {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.801);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1040;
+}
+#pop-up-simulator .close-pop-up {
+  position: absolute;
+  right: 40px;
+  color: white;
+  font-size: 40px;
+  top: 0;
+  cursor: pointer;
+  transition: 0.8s;
+}
+@media (min-width: 767.98px) {
+  #pop-up-simulator .close-pop-up {
+    right: 115px;
+  }
+}
+#pop-up-simulator .close-pop-up:hover {
+  color: #8EB91E;
+  transition: 0.8s;
+}
+#pop-up-simulator #formSimulator {
+  max-width: 290px;
+  background-color: white;
+  height: 100%;
+  max-height: 560px;
+  padding: 30px;
+}
+@media (min-width: 767.98px) {
+  #pop-up-simulator #formSimulator {
+    max-width: 550px;
+  }
+}
+#pop-up-simulator .btn {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 767.98px) {
+  #pop-up-simulator .btn {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.bp-simulador {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.bp-simulador h3 {
+  color: black;
+  text-align: center;
+}
+.bp-simulador button {
+  border: none;
+}
+.bp-simulador .title {
+  color: #EC1E3F;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.bp-simulador .bp-line {
+  text-align: center;
+}
+.bp-simulador .page-number.row {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  text-align: center;
+  position: relative;
+}
+.bp-simulador .page-number.row .page {
+  background-color: white;
+  color: #EC1E3F;
+  border: #EC1E3F 2px solid;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 99;
+}
+.bp-simulador .page-number.row .active {
+  background-color: #EC1E3F;
+  color: white;
+}
+.bp-simulador .pageshow-title h4 {
+  color: #EC1E3F;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 25px;
+}
+.bp-simulador .pageshow-choice select {
+  width: 100%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 450px;
+}
+.bp-simulador .pageshow-choice input {
+  width: 100%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 450px;
+}
+.bp-simulador .pageshow-choice select, .bp-simulador .pageshow-choice input {
+  background: #f1f2f7;
+  border: none;
+  width: 100%;
+  border: 1px #dce0ea solid;
+  padding: 10px;
+  min-height: 40px;
+}
+.bp-simulador .pageshow-choice .radiobuttom {
+  width: 5px 20px;
+  height: 20px;
+  min-height: 20px;
+  margin: 0px;
+}
+.bp-simulador .pageshow-choice label {
+  font-size: 25px;
+  padding: 5px;
+  color: gray;
+}
+.bp-simulador .radio-group {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bp-simulador .simulatorline {
+  position: absolute;
+  width: 300px;
+  top: 16px;
+  left: 50px;
+  margin: 0;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -49,6 +49,7 @@
 					<span class="dados"><?php the_field('situacao'); ?></span>
 					<span class="info-valor pl-3 pr-3"><?php the_field('valor'); ?></span>
 					<a data-toggle="modal" data-target="#whatsapp" href="#" class="ml-3 mr-3 mb-3 btn btn-success text-white"><i class="fab fa-whatsapp pr-2"></i> Fale conosco pelo whatsapp</a>
+					<a onclick="open_pop_up('<?php the_title() ?>')" href="#" class="ml-3 mr-3 mb-3 btn btn-warning text-white"><i class="far fa-building small pr-2"></i> Faça sua simulação aqui</a>
 					<a data-toggle="modal" data-target="#faleConosco" href="#" class="ml-3 mr-3 mb-3 btn btn-danger text-white"><i class="far fa-envelope small pr-2"></i> Fale conosco pelo email</a>
 					<a href="<?php the_field('mapa_google'); ?>" target="_blank" class="ml-3 mr-3 mb-3 btn btn-primary text-white"><i class="fas fa-map-marker-alt small pr-2"></i> Vá de Google Maps</a>
 					<a href="<?php the_field('mapa_waze'); ?>" target="_blank" class="ml-3 mr-3 mb-3 btn btn-info text-white"><i class="fab fa-waze pr-2"></i> Vá de Waze</a>

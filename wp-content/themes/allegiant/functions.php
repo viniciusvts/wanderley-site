@@ -196,12 +196,17 @@ add_filter( 'single_template', function ($single_template) {
 }, 10, 3 );
 // DNA
 
-// Incluir DNA JS
-function dnajs() {
+// Incluir DNA assets
+function dnaAssets() {
 	wp_enqueue_script( 'dnajs', 
   					get_stylesheet_directory_uri() . '/js/dna.js', 
   					array('jquery'), 
   					'1.0', 
-  					true); 
+  					true);
+	wp_enqueue_style( 'dnacss', 
+					get_stylesheet_directory_uri() . '/css/dna/style.css', 
+					array('bootstrap_css'), 
+					'1.0'
+					);  
 }
-add_action( 'wp_enqueue_scripts', 'dnajs');
+add_action( 'wp_enqueue_scripts', 'dnaAssets');
