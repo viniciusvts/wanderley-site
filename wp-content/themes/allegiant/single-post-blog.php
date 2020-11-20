@@ -6,7 +6,7 @@
 	<!-- <div class="container"> -->
 		<section id="topo">
             <?php
-                get_template_part( 'template-parts/element', 'single-header');
+                get_template_part( 'template-parts/element', 'single-header-blog');
             ?>
         </section>
 		<section id="content" class="pb-0 pl-lg-5 content">	

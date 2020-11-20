@@ -12,6 +12,7 @@ if ( $header_image != '' ) {
 	<div class="container">
 		<?php do_action( 'cpotheme_bread' ); ?>
 		<?php do_action( 'cpotheme_title' ); ?>
+		<?php the_post_thumbnail(); ?>
 	</div>
 </section>
 <?php do_action( 'cpotheme_after_title' ); ?>
