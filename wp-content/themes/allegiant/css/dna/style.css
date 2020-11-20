@@ -162,4 +162,8 @@
   float: none;
 }
 
+.filter-brig-50 {
+  filter: brightness(0.5);
+}
+
 /*# sourceMappingURL=style.css.map */
