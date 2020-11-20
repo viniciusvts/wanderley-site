@@ -31,7 +31,10 @@
 			
         </section>
         <aside id="sidebar" class="sidebar sidebar-blog">
-		    <?php dynamic_sidebar('blog-sidebar'); ?>
+            <?php
+                dynamic_sidebar('blog-sidebar');
+                echo do_shortcode('[contact-form-7 id="506"]');
+            ?>
         </aside>
 		<div class="clear"></div>
 	</div>

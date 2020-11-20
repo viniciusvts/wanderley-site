@@ -157,3 +157,22 @@ $desktops4k: 2999.98;
         border-top: 1px solid rgba(0,0,0,.1);
     }
 }
+// formulário sidebar
+#formNewsSidebar{
+    p{
+        margin-bottom: 20px;
+        padding-bottom: 5px;
+        color: #567;
+    }
+    input{
+        padding: 10px;
+        margin: 10px auto 0;
+        &:not([type="submit"]){
+            background-color: white;
+            border: solid 1px #567;
+        }
+        &[type="submit"]{
+            float: none;
+        }
+    }
+}

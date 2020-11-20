@@ -5,7 +5,7 @@
 	<div class="post-body">
 		<div class="container">
 			<div class="row">
-				<div class="col-12 col-sm-12 col-md-8 col-lg-8">
+				<div class="col-12">
 					<?php cpotheme_postpage_title(); ?>
 			
 					<div class="post-content">

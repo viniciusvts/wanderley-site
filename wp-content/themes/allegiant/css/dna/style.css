@@ -145,4 +145,21 @@
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+#formNewsSidebar p {
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  color: #567;
+}
+#formNewsSidebar input {
+  padding: 10px;
+  margin: 10px auto 0;
+}
+#formNewsSidebar input:not([type=submit]) {
+  background-color: white;
+  border: solid 1px #567;
+}
+#formNewsSidebar input[type=submit] {
+  float: none;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -206,7 +206,7 @@ function dnaAssets() {
 	wp_enqueue_style( 'dnacss', 
 					get_stylesheet_directory_uri() . '/css/dna/style.css', 
 					array('bootstrap_css'), 
-					'1.0'
+					'1.0.1'
 					);  
 }
 add_action( 'wp_enqueue_scripts', 'dnaAssets');

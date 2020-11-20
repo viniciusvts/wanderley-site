@@ -9,7 +9,7 @@
                 get_template_part( 'template-parts/element', 'single-header');
             ?>
         </section>
-		<section id="content" class="pb-0">	
+		<section id="content" class="pb-0 pl-lg-5 content">	
 			<?php do_action( 'cpotheme_before_content' ); ?>
 			<?php
 			if ( have_posts() ) {
@@ -24,6 +24,12 @@
 ?>
 			<?php do_action( 'cpotheme_after_content' ); ?>
 		</section>
+        <aside id="sidebar" class="sidebar sidebar-blog">
+            <?php
+                dynamic_sidebar('blog-sidebar');
+                echo do_shortcode('[contact-form-7 id="506"]');
+            ?>
+        </aside>
 		<div class="clear"></div>
 	<!-- </div> -->
 </div>
