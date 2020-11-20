@@ -47,11 +47,6 @@
 						</div>
 					</div>
 				</div>
-				<aside id="sidebar" class="sidebar col-12 col-sm-12 col-md-4 col-lg-4">
-					<div class="card shadow mb-5 flutuante">
-						
-					</div>
-				</aside>
 			</div>
 		</div>
 		<?php
