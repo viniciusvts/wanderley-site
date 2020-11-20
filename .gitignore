@@ -1,5 +1,11 @@
+## Arquivos do projeto não necessãrios
 .htaccess
+## pastas de assets
 wp-content/plugins/
 wp-content/uploads/
+wp-content/cache/
+## arquivos de assets
+wp-content/autoptimize_404_handler.php
+#pastas de outros projetos
 dsv.wanderleycons/
 .tmb/
