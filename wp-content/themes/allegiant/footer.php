@@ -23,7 +23,7 @@
 					</div>
 					<div class="col-4 col-sm-3 col-md-3">
 						<div class="button-whatsapp">
-							<a data-toggle="modal" data-target="#whatsapp" href="#" title="Nosso WhatsApp">
+							<a onclick="ga('send', 'event', 'conversao', 'clique', 'whatsapp')" data-toggle="modal" data-target="#whatsapp" href="#" title="Nosso WhatsApp">
 								<p><i class="fab fa-whatsapp"></i><br>Whatsapp</p>
 							</a>
 						</div>
