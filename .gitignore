@@ -1,5 +1,6 @@
 ## Arquivos do projeto não necessãrios
 .htaccess
+.vscode/
 ## pastas de assets
 wp-content/plugins/
 wp-content/uploads/
