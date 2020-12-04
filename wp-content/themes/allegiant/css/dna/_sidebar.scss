@@ -1,0 +1,21 @@
+#formNewsSidebar{
+    p{
+        margin-bottom: 20px;
+        padding-bottom: 5px;
+        color: #567;
+    }
+    input{
+        padding: 10px;
+        margin: 10px auto 0;
+        &:not([type="submit"]){
+            background-color: white;
+            border: solid 1px #567;
+        }
+        &[type="submit"]{
+            float: none;
+        }
+    }
+}
+.filter-brig-50{
+    filter: brightness(0.5);
+}
