@@ -197,6 +197,7 @@ add_filter( 'single_template', function ($single_template) {
 // DNA
 // custom posts
 require_once 'custom-posts/custom-materiais.php';
+require_once 'dna-inc/posts.php';
 // Incluir DNA assets
 function dnaAssets() {
 	wp_enqueue_script( 'dnajs', 
