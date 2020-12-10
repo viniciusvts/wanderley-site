@@ -15,6 +15,8 @@
 			if ( have_posts() ) {
 				while ( have_posts() ) :
 					the_post();
+					//aqui eu adiciono contagem de views ao post
+					dna_addPostView(get_the_ID());
 				?>
 			<?php get_template_part( 'template-parts/element', 'single-blog' ); ?>
 
@@ -27,7 +29,7 @@
         <aside id="sidebar" class="sidebar sidebar-blog">
             <?php
                 dynamic_sidebar('blog-sidebar');
-                echo do_shortcode('[contact-form-7 id="506"]');
+				echo do_shortcode('[contact-form-7 id="506"]');
             ?>
         </aside>
 		<div class="clear"></div>
