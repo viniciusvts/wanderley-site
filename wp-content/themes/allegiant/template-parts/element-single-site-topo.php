@@ -10,7 +10,7 @@
 	</div>	
 	<div class="container">
 		<?php //cpotheme_postpage_title(); ?>
-		<div class="post-customtype text-white">
+		<div class="post-customtype text-white mb-5">
             <p><?php the_field('cidade'); ?></p>
             <h2 class="font-weight-bold text-white" style="font-size:1.8rem;"><?php the_title(); ?></h2>
             <h2 class="text-white"><?php the_field('bairro'); ?></h2>

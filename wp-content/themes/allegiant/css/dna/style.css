@@ -4,6 +4,15 @@
   width: 100% !important;
 }
 
+.carousel-caption.home {
+  margin-top: 75px;
+}
+@media (min-width: 1919.98px) {
+  .carousel-caption.home {
+    margin-top: 150px;
+  }
+}
+
 #formNewsSidebar p {
   margin-bottom: 20px;
   padding-bottom: 5px;

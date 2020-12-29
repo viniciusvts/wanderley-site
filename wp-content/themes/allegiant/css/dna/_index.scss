@@ -2,3 +2,9 @@
     overflow-x: hidden!important;
     width: 100%!important;
 }
+.carousel-caption.home{
+    margin-top: 75px;
+    @media (min-width: $fullHdDesktops) {
+        margin-top: 150px;
+    }
+}
