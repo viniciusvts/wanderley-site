@@ -1,4 +1,9 @@
 /* imports */
+a.no-style:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
 .caroufredsel_wrapper {
   overflow-x: hidden !important;
   width: 100% !important;
