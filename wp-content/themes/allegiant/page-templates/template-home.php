@@ -21,7 +21,7 @@
                             <li data-target="#myCarousel2" data-slide-to="<?php echo $n++; ?>"></li>
                         <?php endwhile; ?>
                     </ol>
-
+                    <?php $b=0; ?>
                     <div class="carousel-inner">
                         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
                             <div class="carousel-item <?php if (0 == $b) { echo "active"; } ?> ">
@@ -29,7 +29,7 @@
                                     <div class="item active">
                                         <a href="<?php the_field('link'); ?>">
                                             <?php if ( has_post_thumbnail() ) { the_post_thumbnail();} ?>
-                                                <div class="carousel-caption">
+                                                <div class="carousel-caption home">
                                                     <h1 class="text-white"><?php the_title(); ?></h1>
 													<span class="barra"></span>
                                                     <?php the_content(); ?>
@@ -70,7 +70,7 @@
                             <li data-target="#myCarouselMobile" data-slide-to="<?php echo $m++; ?>"></li>
                         <?php endwhile; ?>
                     </ol>
-
+                    <?php $c= 0; ?>
                     <div class="carousel-inner">
                         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
                             <div class="carousel-item <?php if (0 == $c) { echo "active"; } ?> ">
