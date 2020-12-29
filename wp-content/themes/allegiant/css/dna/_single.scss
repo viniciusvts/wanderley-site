@@ -4,3 +4,15 @@
 .filter-img-top{
     filter: brightness(0.7);
 }
+.col-fhd-2{
+    @media (min-width: $fullHdDesktops) {
+        -ms-flex: 0 0 16.666667%;
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+    }
+}
+.nocontainer-lg{
+    @media (min-width: $desktops) {
+        max-width: unset;
+    }
+}

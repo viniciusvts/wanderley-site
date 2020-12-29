@@ -198,4 +198,18 @@ ul.carousel-indicators li {
   filter: brightness(0.7);
 }
 
+@media (min-width: 1919.98px) {
+  .col-fhd-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .nocontainer-lg {
+    max-width: unset;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
