@@ -13,6 +13,10 @@
   }
 }
 
+ul.carousel-indicators li {
+  list-style-type: none;
+}
+
 #formNewsSidebar p {
   margin-bottom: 20px;
   padding-bottom: 5px;

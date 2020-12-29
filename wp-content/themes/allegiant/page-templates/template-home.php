@@ -16,11 +16,11 @@
 
             <div class="banner-slide">
                 <div id="myCarousel2" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
+                    <ul class="carousel-indicators">
                         <?php while($loop->have_posts()): $loop->the_post(); ?>
                             <li data-target="#myCarousel2" data-slide-to="<?php echo $n++; ?>"></li>
                         <?php endwhile; ?>
-                    </ol>
+                    </ul>
                     <?php $b=0; ?>
                     <div class="carousel-inner">
                         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
@@ -65,11 +65,11 @@
 
             <div class="bannermobile-slide">
                 <div id="myCarouselMobile" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
+                    <ul class="carousel-indicators">
                         <?php while($loop->have_posts()): $loop->the_post(); ?>
                             <li data-target="#myCarouselMobile" data-slide-to="<?php echo $m++; ?>"></li>
                         <?php endwhile; ?>
-                    </ol>
+                    </ul>
                     <?php $c= 0; ?>
                     <div class="carousel-inner">
                         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
