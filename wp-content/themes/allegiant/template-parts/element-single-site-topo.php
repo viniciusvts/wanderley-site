@@ -4,7 +4,7 @@
 			//$image_m =  get_field('imagem_topo');
 			//$image_a = get_field('imagem_topo');
 		?> -->
-		<figure>
+		<figure class="filter-img-top">
 			<img src="<?php the_field('imagem_topo'); ?>">
 		</figure>
 	</div>	

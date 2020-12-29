@@ -185,4 +185,8 @@
   object-fit: cover;
 }
 
+.filter-img-top {
+  filter: brightness(0.7);
+}
+
 /*# sourceMappingURL=style.css.map */
