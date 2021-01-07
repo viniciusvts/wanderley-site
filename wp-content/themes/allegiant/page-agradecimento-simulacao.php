@@ -14,7 +14,7 @@ if(isset($_POST["nome"])){
   //$cash = $_POST["cash"];
   $urlOrigem = $_POST["urlOrigem"];
   //send email
-  $to = get_option('admin_email');
+  $to = 'gesika@wanderleyconstrucoes.com.br';
   $subject = 'Form prestes (simulador Pop-Up)';
   $message = "Nome: ".$nome
       ."<br>Email: ".$email
