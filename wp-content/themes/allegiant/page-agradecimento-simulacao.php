@@ -2,7 +2,6 @@
 /* vem de dna/page-simulador.php */
 if(isset($_POST["nome"])){
   $regiao = $_POST["regiao"];
-  $empreendimento = $_POST["empreendimentocliente"];
   $cidade = $_POST["cidade"];
   $nome = $_POST["nome"];
   $email = $_POST["email"];
@@ -24,7 +23,6 @@ if(isset($_POST["nome"])){
       ."<br>Entrada: ".$entrada
       ."<br>Telefone: ".$tel
       ."<br>Pretende usar o FGTS: ".$fgts
-      ."<br>Empreendimento de Interesse: ".$empreendimento
       ."<br>Url de Origem: ".$urlOrigem
       ."<br>Converteu em: ".$convertido;
   $headers = array('Content-Type: text/html; charset=UTF-8');
