@@ -1,5 +1,6 @@
 <?php do_action( 'cpotheme_after_main' ); ?>
 
+<?php get_template_part( 'template-parts/dna', 'popupsimulator' ); ?>
 			<?php get_sidebar( 'footer' ); ?>
 
 			<?php do_action( 'cpotheme_before_footer' ); ?>
