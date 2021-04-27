@@ -32,7 +32,7 @@
                         <div class="col-12 col-sm-12 col-md-4">
                             <a href="<?php the_permalink(); ?>" title="Ver empreendimento">
                                 <div class="card shadow-sm mb-5 text-white rounded">
-                                    <img class="card-img" src="<?php the_post_thumbnail_url(); ?>">
+                                    <img class="card-img" src="<?php the_post_thumbnail_url(); ?>" alt="post thumbnail">
                                     <div class="card-img-overlay d-flex justify-content-end align-items-start flex-column">
                                         <span><?php the_field('cidade'); ?></span>
                                         <h3 class="card-title text-white mt-0"><?php the_title(); ?></h3>

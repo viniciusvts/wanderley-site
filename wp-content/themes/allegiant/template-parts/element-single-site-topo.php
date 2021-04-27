@@ -5,7 +5,7 @@
 			//$image_a = get_field('imagem_topo');
 		?> -->
 		<figure class="filter-img-top">
-			<img src="<?php the_field('imagem_topo'); ?>">
+			<img src="<?php the_field('imagem_topo'); ?>" alt="imagem topo">
 		</figure>
 	</div>	
 	<div class="container">

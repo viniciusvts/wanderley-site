@@ -18,7 +18,7 @@
                             <div class="col-12 col-sm-12 col-md-6">
                                 <a class="no-style" href="<?php the_permalink(); ?>">
                                     <div class="card shadow-sm mb-5">
-                                        <img class="card-img-top" src="<?php the_post_thumbnail_url(); ?>">
+                                        <img class="card-img-top" src="<?php the_post_thumbnail_url(); ?>" alt="post thumbnail">
                                         <div class="card-body">
                                             <h5 class="card-title mt-3 mb-3"><?php the_title(); ?></h5>
                                             <?php the_excerpt(); ?>

@@ -39,7 +39,7 @@
                             <div class="col-12 col-sm-12 col-md-3">
                                 <div class="card text-center" style="border: none">
                                     <figure>
-                                        <img src="<?php the_post_thumbnail_url(); ?>">
+                                        <img src="<?php the_post_thumbnail_url(); ?>" alt="post thumbnail">
                                     </figure>
                                     <div class="card-body">
                                         <h3 class="card-title"><?php the_title(); ?></h3>
