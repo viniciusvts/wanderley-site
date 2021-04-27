@@ -8,9 +8,10 @@
 //	$header_image = 'style="background-image:url(' . esc_url( $header_image ) . ');"';}
 ?>
 <?php do_action( 'cpotheme_before_title' ); ?>
-<section id="pagetitleblog" class="mb-0" style="padding-bottom: 50px;">
+<section id="pagetitleblog" class="mb-0" style="padding: 70px 0 20px;">
 	<div class="container">
 		<?php //do_action( 'cpotheme_title_blog' ); ?>
+		<h1><?php the_title(); ?></h1>
 	</div>
 </section>
 <?php do_action( 'cpotheme_after_title' ); ?>
