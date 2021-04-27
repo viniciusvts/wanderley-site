@@ -12,7 +12,7 @@
                 <div class="row">
                     <?php
                         global $post;
-                        $args = array( 'cat' => '13' );
+                        $args = array( 'cat' => '13', 'numberposts' => 20 );
                         $myposts = get_posts( $args );
                         foreach( $myposts as $post ) : setup_postdata($post); ?>
                             <div class="col-12 col-sm-12 col-md-6">
