@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<?php get_template_part( 'template-parts/element', 'blog-topo' ); ?>
+<?php get_template_part( 'template-parts/element', 'blog-topo-single' ); ?>
 
 <div id="main" class="main">
 	<!-- <div class="container"> -->
