@@ -28,7 +28,7 @@
 
         <section id="pilares" class="mt-5 mb-5">
             <div class="container">
-                <h1 class="titulos text-center mb-5">Nossos Pilares</h1>
+                <h2 class="titulos text-center mb-5">Nossos Pilares</h2>
 
                 <div class="row">
                     <?php
