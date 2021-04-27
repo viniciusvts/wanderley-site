@@ -17,7 +17,7 @@
 		if ( is_singular( 'post' ) ) {
 			cpotheme_postpage_tags( false, '', '', '' );}
 ?>
-		<?php cpotheme_postpage_readmore( 'button' ); ?>
+		<?php //cpotheme_postpage_readmore( 'button' ); ?>
 		<div class="clear"></div>
 	</div>
 </article>
