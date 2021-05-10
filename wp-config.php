@@ -1,4 +1,5 @@
 <?php
+define( 'WP_CACHE', true );
 /**
  * As configurações básicas do WordPress
  *
@@ -52,6 +53,10 @@ switch ($server_addr) {
 
 define('WP_HOME',$wp_home);
 define('WP_SITEURL',$wp_siteurl);
+
+@ini_set( 'upload_max_size' , '64M' );
+@ini_set( 'post_max_size', '64M');
+@ini_set( 'max_execution_time', '300' );
 
 // ** Configurações do MySQL - Você pode pegar estas informações com o serviço de hospedagem ** //
 /** O nome do banco de dados do WordPress */
