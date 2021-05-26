@@ -200,6 +200,7 @@ require_once 'custom-posts/custom-materiais.php';
 require_once 'dna-inc/disableEndpoints.php';
 require_once 'dna-inc/posts.php';
 require_once 'dna-inc/widgets.php';
+require_once 'dna-inc/shortcodes.php';
 // Incluir DNA assets
 function dnaAssets() {
 	wp_enqueue_script( 'dnajs', 
