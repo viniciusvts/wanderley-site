@@ -3,7 +3,7 @@
     <form method="POST" action="<?php echo bloginfo( "url" ) ?>/agradecimento-simulacao/" class="bp-simulador container" id="formSimulator">
         <div class="title row">
             <div class="col-12">
-                <h3>Simulador de financiamento</h3>
+                <h3>Pré-cadastro</h3>
             </div>
         </div>
         <div class="page-number row">
