@@ -8,9 +8,6 @@
     bottom: 0;
     z-index: 1040;
     line-height: 30px;
-    @media (min-width: $tablets) {
-        line-height: 70px;
-    }
     .close-pop-up {
         position: absolute;
         right: 40px;

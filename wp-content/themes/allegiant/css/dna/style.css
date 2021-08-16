@@ -54,11 +54,6 @@ ul.carousel-indicators li {
   z-index: 1040;
   line-height: 30px;
 }
-@media (min-width: 767.98px) {
-  #pop-up-simulator {
-    line-height: 70px;
-  }
-}
 #pop-up-simulator .close-pop-up {
   position: absolute;
   right: 40px;
